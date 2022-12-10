@@ -1,0 +1,68 @@
+.container {
+  position: relative;
+}
+
+.left {
+  background-color: rgb(255, 81, 0);
+}
+
+.left-enter {
+  transform: translateX(100%);
+}
+
+.left-enter-active {
+  transform: translateX(0%);
+  transition: transform 300ms ease-in;
+}
+
+.left-exit {
+  transform: translateX(0%);
+}
+
+.left-exit-active {
+  transform: translateX(-140%);
+  transition: transform 300ms ease-out;
+}
+
+
+.right {
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  background-color: aqua;
+}
+
+.right-enter {
+  transform: translateX(-140%);
+}
+
+.right-enter-active {
+  transform: translateX(0%);
+  transition: transform 300ms ease-in;
+}
+
+.right-exit {
+  transform: translateX(0%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.right-exit-active {
+  transform: translateX(140%);
+  transition: transform 300ms ease-out;
+}
+
+.myCard {
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  background-color: aqua;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  overflow: hidden; 
+  /* i put overflow:hidden here to try and keep the horizonal and veritcal scroll bars from popping up */
+}
