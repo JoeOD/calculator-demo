@@ -4,7 +4,8 @@ import {
   createBrowserRouter,
   RouterProvider,
   useLocation,
-  useOutlet
+  useOutlet,
+  createHashRouter
 } from 'react-router-dom'
 import { CSSTransition, SwitchTransition } from 'react-transition-group'
 import { Container } from 'react-bootstrap'
@@ -30,7 +31,7 @@ const routes = [
   }
 ]
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <Provider store={store}><Example /></Provider>,

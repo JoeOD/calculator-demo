@@ -1,6 +1,7 @@
 {
   "name": "csstransition-react-router",
   "version": "1.0.0",
+  "homepage": "https://JoeOD.github.io/calculator-demo",
   "description": "An example of using react-transition-group with react-router.",
   "keywords": [
     "react",
@@ -26,7 +27,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
